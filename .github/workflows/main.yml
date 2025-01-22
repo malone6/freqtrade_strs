@@ -19,5 +19,4 @@ jobs:
         run: |
           git remote add upstream https://github.com/ssssi/freqtrade_strs.git
           git fetch upstream
-          git merge upstream/main
-          git push origin main
+          git merge upstream/main --allow-unrelated-histories
