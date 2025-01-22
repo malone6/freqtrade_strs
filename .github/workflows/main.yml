@@ -12,12 +12,12 @@ jobs:
       - name: Checkout Fork
         uses: actions/checkout@v3
         with:
-          repository: <your-username>/<repository-name>
+          repository: malone6/freqtrade_strs
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Add Upstream
         run: |
-          git remote add upstream https://github.com/<original-owner>/<repository-name>.git
+          git remote add upstream https://github.com/ssssi/freqtrade_strs.git
           git fetch upstream
           git merge upstream/main
           git push origin main
